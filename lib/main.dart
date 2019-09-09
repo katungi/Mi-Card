@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.pinkAccent,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center, 
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0, 
@@ -37,10 +38,17 @@ class MyApp extends StatelessWidget {
                      fontWeight: FontWeight.bold
                   ),   
               ),
+              SizedBox(
+                height: 30.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.pink[50]
+                ),
+              ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
-                  leading:  Icon( 
+                  leading:  Icon(
                       Icons.phone,
                       color: Colors.pinkAccent[100],
                     ),
@@ -57,7 +65,6 @@ class MyApp extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Card(
-
                   margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 15.0),
                       child: ListTile(
                         leading:  Icon(
