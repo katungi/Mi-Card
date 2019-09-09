@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               CircleAvatar(
-                radius: 50.0,
+                radius: 50.0, 
                 backgroundImage: AssetImage('images/dino.jpg'),    
               ),
               Text(
@@ -29,13 +29,59 @@ class MyApp extends StatelessWidget {
                 ),
               ),
                 Text(
-                  'FlUTTER DEVELOPER',
+                  'FLUTTER DEVELOPER',
                   style: TextStyle(
                     color: Colors.pinkAccent[100],
                      fontSize: 20.0,
                      letterSpacing: 2.5,
                      fontWeight: FontWeight.bold
                   ),   
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.pinkAccent[100],
+                    ),
+
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+254713836206',
+                      style: TextStyle(
+                        color: Colors.pinkAccent[100],
+                        fontSize: 20.0,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.pinkAccent[100],
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'dankatdennis@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.pinkAccent[100],
+                      ),
+                    ),
+                ],),
               ),
             ],
           ),
