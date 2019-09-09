@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(
   MyApp()
@@ -23,8 +24,18 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico'
                 ),
+              ),
+                Text(
+                  'FlUTTER DEVELOPER',
+                  style: TextStyle(
+                    color: Colors.pinkAccent[100],
+                     fontSize: 20.0,
+                     letterSpacing: 2.5,
+                     fontWeight: FontWeight.bold
+                  ),   
               ),
             ],
           ),

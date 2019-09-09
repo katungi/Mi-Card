@@ -33,11 +33,7 @@ flutter:
     - images/dino.jpg
     
   fonts:
-   
     - family: Pacifico
       fonts:
-        - asset: fonts/Pacifico_Regular.ttf
-          weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.io/custom-fonts/#from-packages
+        - asset: fonts/Pacifico-Regular.ttf
+  
