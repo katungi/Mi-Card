@@ -37,10 +37,9 @@ class MyApp extends StatelessWidget {
                      fontWeight: FontWeight.bold
                   ),   
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
                 child: Row(
                   children: <Widget>[
                     Icon(
@@ -61,9 +60,8 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
                 child: Row(
                   children: <Widget>[
