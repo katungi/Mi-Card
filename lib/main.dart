@@ -38,48 +38,42 @@ class MyApp extends StatelessWidget {
                   ),   
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                child: ListTile(
+                  leading:  Icon( 
                       Icons.phone,
                       color: Colors.pinkAccent[100],
                     ),
-
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    
+                    title: Text(
                       '+254713836206',
                       style: TextStyle(
                         color: Colors.pinkAccent[100],
                         fontSize: 20.0,
                       ),
-                    )
-                  ],
+                    ),
                 ),
               ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.pinkAccent[100],
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'dankatdennis@gmail.com',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.pinkAccent[100],
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Card(
+
+                  margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 15.0),
+                      child: ListTile(
+                        leading:  Icon(
+                          Icons.email,
+                          color: Colors.pinkAccent[100],
+                        ),
+
+                        title: Text(
+                          'dankatdennis@gmail.com',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            color: Colors.pinkAccent[100],
+                          ),
+                        ),
                       ),
-                    ),
-                ],),
+                  ),
               ),
             ],
           ),
@@ -88,4 +82,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
